@@ -1,4 +1,6 @@
 import Link from "next/link";
+import projects from "../projects.json";
+import React from "react";
 
 export const Navigation = () => {
   return (
@@ -22,23 +24,30 @@ export const Navigation = () => {
   );
 };
 export const Projekt_List = () => {
+  let temp = JSON.stringify(projects);
+  temp = JSON.parse(temp);
+  const projekt_list = temp.projects.map((project) => (
+    <div
+      key={project.name}
+      className="bg-amber-300 inline-block p-8 text-white m-5 rounded-lg"
+    >
+      <h2 className="p-2 text-3xl">{project.name}</h2>
+      <img src={project.img} alt={project.name} className="w-96 h-96 p-3"></img>
+      <p className="p-2">{project.description}</p>
+      <p>
+        <Link
+          href={`/Projekt/${project.name}`}
+          className="hover:bg-blue-800 inline-block p-3"
+        >
+          Ugrás a projekt oldalra
+        </Link>
+      </p>
+    </div>
+  ));
+
   return (
-    <nav>
-      <li className="link">
-        <Link href="/Projekt/1">
-          <p className="hover:bg-black p-3">Projekt 1</p>
-        </Link>
-      </li>
-      <li className="link">
-        <Link href="/Projekt/2">
-          <p className="hover:bg-black p-3">Projekt 2</p>
-        </Link>
-      </li>
-      <li className="link">
-        <Link href="/Projekt/3">
-          <p className="hover:bg-black p-3">Projekt 3</p>
-        </Link>
-      </li>
-    </nav>
+    <div className="text-center m-10">
+      <ul className="inline-block">{projekt_list}</ul>
+    </div>
   );
 };
