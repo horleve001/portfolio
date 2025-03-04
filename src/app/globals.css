@@ -1,12 +1,22 @@
 @import "tailwindcss";
 
 body {
-  background-color: #56a81e;
+  background-color: #3f7ad3;
   font-family: "Roboto", sans-serif;
+}
+h1 {
+  color: white;
+  font-size: 40px;
+  margin: 5px;
+}
+p {
+  color: white;
+  font-size: 20px;
+  margin: 5px;
 }
 
 .navBar {
-  background-color: #a86c1e;
+  background-color: #154183;
   padding: 10px;
   position: fixed;
   top: 0;
@@ -15,11 +25,9 @@ body {
 li.link {
   color: white;
   text-align: center;
-  padding: 10px 20px;
+  padding: 6px 20px;
   text-decoration: none;
   font-size: 20px;
-  line-height: 60px;
-  margin: 0 2px;
   display: inline-block;
 }
 .myself {
@@ -34,9 +42,4 @@ li.link {
   margin-top: 100px;
   padding: 20px;
   width: 100%;
-}
-p {
-  color: white;
-  font-size: 20px;
-  margin: 5px;
 }
