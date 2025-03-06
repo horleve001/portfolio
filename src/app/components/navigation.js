@@ -29,15 +29,19 @@ export const Projekt_List = () => {
   const projekt_list = temp.projects.map((project) => (
     <div
       key={project.name}
-      className="bg-amber-300 inline-block p-8 text-white m-5 rounded-lg"
+      className="bg-amber-300 p-8 text-white m-10 rounded-lg inline-block w-1/3"
     >
       <h2 className="p-2 text-3xl">{project.name}</h2>
-      <img src={project.img} alt={project.name} className="w-96 h-96 p-3"></img>
+      <img
+        src={project.img}
+        alt={project.name}
+        className=" p-3 justify-center inline-block"
+      ></img>
       <p className="p-2">{project.description}</p>
       <p>
         <Link
           href={`/Projekt/${project.name}`}
-          className="hover:bg-blue-800 inline-block p-3"
+          className="hover:bg-blue-800 p-3"
         >
           Ugrás a projekt oldalra
         </Link>
@@ -47,7 +51,7 @@ export const Projekt_List = () => {
 
   return (
     <div className="text-center m-10">
-      <ul className="inline-block">{projekt_list}</ul>
+      <ul className="w-1/4 inline">{projekt_list}</ul>
     </div>
   );
 };
