@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Navigation } from "./components/navigation";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Portfolio",

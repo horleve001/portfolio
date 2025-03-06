@@ -14,21 +14,11 @@ p {
   font-size: 20px;
   margin: 5px;
 }
-
-.navBar {
-  background-color: #154183;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 li.link {
   color: white;
   text-align: center;
-  padding: 6px 20px;
-  text-decoration: none;
-  font-size: 20px;
   display: inline-block;
+  font-size: 20px;
 }
 .myself {
   color: white;
@@ -37,9 +27,4 @@ li.link {
   height: 40%;
   padding: 10px;
   margin: 10px;
-}
-.container {
-  margin-top: 100px;
-  padding: 20px;
-  width: 100%;
 }

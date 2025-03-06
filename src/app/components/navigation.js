@@ -4,7 +4,7 @@ import React from "react";
 
 export const Navigation = () => {
   return (
-    <nav className="navBar">
+    <nav className="bg-blue-900 text-white p-4 flex justify-center fixed top-0 w-full">
       <li className="link">
         <Link href="/" className="hover:bg-blue-800 p-5">
           Főoldal
@@ -37,7 +37,14 @@ export const Projekt_List = () => {
         alt={project.name}
         className=" p-3 justify-center inline-block"
       ></img>
-      <p className="p-2">{project.description}</p>
+      {project.technologies.map((technology) => (
+        <li
+          key={technology}
+          className="p-2 inline-block bg-amber-700 m-1 rounded-2xl"
+        >
+          {technology}
+        </li>
+      ))}
       <p>
         <Link
           href={`/Projekt/${project.name}`}

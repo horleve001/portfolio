@@ -4,31 +4,44 @@
       "name": "Portfolio",
       "description": "This is my portfolio",
       "img": "portfolio.png",
-      "link": "https://github.com/horleve001/portfolio"
+      "link": "https://github.com/horleve001/portfolio",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "TailwindCSS",
+        "Next.js",
+        "Node.js"
+      ]
     },
     {
       "name": "Meki-webshop",
       "description": "This is a webshop",
       "img": "meki.png",
-      "link": "https://github.com/horleve001/Meki-webshop"
+      "link": "https://github.com/horleve001/Meki-webshop",
+      "technologies": ["PHP", "HTML", "CSS"]
     },
     {
       "name": "project3",
       "description": "This is project 3",
       "img": "1937.png",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/",
+      "technologies": ["PHP", "HTML", "CSS"]
     },
     {
       "name": "project4",
       "description": "This is project 4",
       "img": "1937.png",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/",
+      "technologies": ["PHP", "HTML", "CSS"]
     },
     {
       "name": "project5",
       "description": "This is project 5",
       "img": "1937.png",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/",
+      "technologies": ["PHP", "HTML", "CSS"]
     }
   ]
 }
