@@ -11,8 +11,8 @@ export default function Home() {
           alt="Horváth Levente"
         />
       </p>
-      <p className="p-3 text-lg">{details.about}</p>
-      <p className="p-3 text-lg">{details.recruiters}</p>
+      <p className="p-3 text-xl">{details.about}</p>
+      <p className="p-3 text-xl">{details.recruiters}</p>
     </div>
   );
 }

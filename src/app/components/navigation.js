@@ -23,23 +23,25 @@ export const Projekt_List = () => {
   const projekt_list = temp.projects.map((project) => (
     <div
       key={project.name}
-      className="bg-amber-300 p-6 text-white m-5 rounded-lg inline-block w-4/10"
+      className="bg-blue-950 p-6 text-white m-5 rounded-3xl inline-block w-4/10 "
     >
-      <h2 className="p-2 text-3xl">{project.name}</h2>
+      <h2 className="p-3 text-3xl">{project.name}</h2>
       <img
         src={project.img}
         alt={project.name}
-        className=" p-3 justify-center inline-block"
+        className=" justify-center inline-block p-3"
       ></img>
-      {project.technologies.map((technology) => (
-        <li
-          key={technology}
-          className="p-3 inline-block bg-amber-700 m-1 rounded-2xl"
-        >
-          {technology}
-        </li>
-      ))}
-      <p>
+      <div className="p-3">
+        {project.technologies.map((technology) => (
+          <li
+            key={technology}
+            className="p-3 inline-block bg-blue-700 m-2 rounded-3xl border-3 text-wtite"
+          >
+            {technology}
+          </li>
+        ))}
+      </div>
+      <p className="p-3">
         <Link
           href={`/Projekt/${project.name}`}
           className="hover:bg-blue-800 p-3"
