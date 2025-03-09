@@ -6,10 +6,10 @@ export default async function Projekt_Template({ params }) {
   let temp = JSON.stringify(projects);
   temp = JSON.parse(temp);
 
-  let current = temp.projects.find((project) => project.name === id);
+  let current = temp.projects.find((project) => encodeURI(project.name) === id);
   return (
-    <div className="m-15 p-5">
-      <h1 className="flex p1 White"> {id}</h1>
+    <div className="mt-15 p-5 m-5">
+      <h1 className="p-3 text-5xl"> {current.name}</h1>
       <p>Welcome to the projekt page.</p>
       <p>Here you can see my project.</p>
       <img
