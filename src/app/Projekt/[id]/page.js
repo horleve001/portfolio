@@ -5,7 +5,6 @@ export default async function Projekt_Template({ params }) {
   const { id } = await params;
   let temp = JSON.stringify(projects);
   temp = JSON.parse(temp);
-  console.log(id);
   let current = temp.projects.find((project) => encodeURI(project.name) === id);
   return (
     <div className="mt-15 p-5 m-5">
