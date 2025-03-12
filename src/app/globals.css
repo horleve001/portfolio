@@ -1,1 +1,35 @@
 @import "tailwindcss";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .underline-animation {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+  .underline-animation::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    width: 90%;
+    height: 6%;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.5s;
+  }
+  .underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+  .load-animation {
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+  .load-animation:hover {
+    background-color: white;
+    @apply text-blue-900;
+    border: 1px solid white;
+  }
+}

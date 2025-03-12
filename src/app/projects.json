@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Portfólió",
-      "description": "This is my portfolio",
+      "description": "Portfólió weboldal, mellyet azért készítettem, hogy bemutathassam a projekteimet mellyel foglalkoztam, és a technológiákat amiket használtam.Ezen felül a célja az volt, hogy új technológiákat tanuljak meg, és a meglévő webfejlesztési ismereteimet eltudjam mélyíteni. A weboldal a React-Next.js keretrendszerrel készült, és a TailwindCSS-t használtam fel a formázáshoz.",
       "img": "portfolio.png",
       "link": "https://github.com/horleve001/portfolio",
       "technologies": [
@@ -17,30 +17,9 @@
     },
     {
       "name": "Meki-webshop",
-      "description": "This is a webshop",
+      "description": "Ez egy fiktív webshop, mely egy étterem weboldalát szimulálja. A projektet Webtervezés nevezetű kurzusra készítettük el ketten. A weboldal a PHP nyelv segítségével készült, és a HTML, CSS nyelveket használtuk fel a formázáshoz, ezenfelül a XAMPP szerver segítségével futtattuk és teszteltük a weboldalt.",
       "img": "meki.png",
       "link": "https://github.com/horleve001/Meki-webshop",
-      "technologies": ["PHP", "HTML", "CSS"]
-    },
-    {
-      "name": "project3",
-      "description": "This is project 3",
-      "img": "1937.png",
-      "link": "https://www.facebook.com/",
-      "technologies": ["PHP", "HTML", "CSS"]
-    },
-    {
-      "name": "project4",
-      "description": "This is project 4",
-      "img": "1937.png",
-      "link": "https://www.facebook.com/",
-      "technologies": ["PHP", "HTML", "CSS"]
-    },
-    {
-      "name": "project5",
-      "description": "This is project 5",
-      "img": "1937.png",
-      "link": "https://www.facebook.com/",
       "technologies": ["PHP", "HTML", "CSS"]
     }
   ]
